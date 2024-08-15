@@ -1,0 +1,65 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{   
+      "id":"1",
+      "username": "Vasu",
+      "email": "vast474@gmail.com",
+      "password": "18.virat.",
+      "created_at": "2024-08-15",
+      "updated_at": "2024-08-15"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{   
+      "username": "Vasu",
+      "password": "18.virat."
+}
+
+###
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{   
+      "id":"2",
+      "user_id": "1",
+      "title": "Code",
+      "description": "Create Todo App",
+      "status":"pending",
+      "created_at": "2024-08-15",
+      "updated_at": "2024-08-15"
+}
+###
+
+POST http://localhost:3000/user-profiles
+Content-Type: application/json
+
+{   
+      "id":"2",
+      "user_id": "2",
+      "name": "Srinivas",
+      "bio": "Coder",
+      "contact_info":"7207448386",
+      "created_at": "2024-08-15",
+      "updated_at": "2024-08-15"
+}
+###
+
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{   
+    "status": "completed"
+}
+###
+
+GET http://localhost:3000/user-profiles/2
+
+###
+GET http://localhost:3000/todos/1
+
+###
+DELETE  http://localhost:3000/todos/1
